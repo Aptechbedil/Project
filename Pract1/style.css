@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: teal;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(44, 44, 44);
+  }
+
+  p{
+    padding: 10px;
+    font-size:30px ;
+  }
+  table{
+    width: 50%;
+    padding: 10px;
+    font-size: 30px;
+    
+    
+    text-align: center;
+  }
+  table, td, th, tr {
+   border:1px solid black;
+    border-collapse: collapse;
+   
+  }
+    table tr td{
+      
+        padding-left: 7px;
+        padding-right: 7px;
+        
+    }
+    h5 a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 400;
+        color: rgb(83, 207, 245);
+        
+    }
+    h5 a :active{
+        color: crimson;
+    }
+    
+    tr:hover{
+      background-color: thistle;
+    }
+   
+
+ input  {
+
+  color: white;
+
+}
+
+form{
+  border: 1px solid black;
+  width: 50%;
+  height: 200px;
+}
+
+.box1{
+  margin-top:20px ;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(235, 160, 215);
+transition: width 2s, height 2s ;
+}
+
+
+span{
+  font-size: 20px;
+  color: cyan;
+  animation-name: cook;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  
+}
+
+
+
+#crocks{
+  font-size: 50px;
+  color: white;
+  animation-name: box;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  text-align: center;
+
+
+}
+
+@keyframes box {
+  form{
+    font-size: 50px;
+    color: white;
+  }
+
+  to {
+    font-size: 100px;
+    transform: rotate(270);
+    color: rgb(255, 17, 199);
+  }
+}
+
+@keyframes cook{
+  5%{
+    margin-left: 20%;
+    width: 30px;
+    height: 30px;
+    background-color: azure;
+    color: red;
+    padding: 15px;
+
+  }
+
+  30%{
+    margin-left: 50%;
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: chartreuse;
+    border: 1px solid red;
+  }
+  70%{
+    margin-left: 80%;
+    font-size: 40px;
+    width: 100px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px double aqua;
+    text-transform: uppercase;
+
+  }
+}
